@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This project was created with react-native-windows 0.0.0-canary.761 -->
+<!-- This project was created with react-native-windows 0.74.3 -->
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(SolutionDir)\ExperimentalFeatures.props" Condition="Exists('$(SolutionDir)\ExperimentalFeatures.props')" />
   <PropertyGroup Label="Globals">
     <CppWinRTOptimized>true</CppWinRTOptimized>
     <MinimalCoreWin>true</MinimalCoreWin>
-    <ProjectGuid>{C04EF85D-063C-423E-A301-91377E490A09}</ProjectGuid>
+    <ProjectGuid>{8C829C9C-11DC-4D3F-ADCC-B5123C735E4B}</ProjectGuid>
     <ProjectName>testFabric</ProjectName>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>testFabric</RootNamespace>

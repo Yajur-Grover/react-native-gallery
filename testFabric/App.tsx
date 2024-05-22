@@ -20,6 +20,7 @@ import { TouchableWithoutFeedbackExamplePage } from './examples/TouchableWithout
 import { PressableExamplePage } from './examples/PressableExamplePage';
 import { FlatListExamplePage } from './examples/FlatListExamplePage';
 import { VirtualizedListExamplePage } from './examples/VirtualizedListExamplePage';
+import { SvgExamplePage } from './examples/SvgExamplePage';
 
 
 // import {useTheme} from '@react-navigation/native';
@@ -106,6 +107,11 @@ export const App: React.FunctionComponent<{}> = () => {
         <StackScreen
           name='VirtualizedList'
           component={VirtualizedListExamplePage}
+          options={({navigation}) => ({header: () => <BreadcrumbBar navigation={navigation}/>})}
+        />
+        <StackScreen
+          name='SVG'
+          component={SvgExamplePage}
           options={({navigation}) => ({header: () => <BreadcrumbBar navigation={navigation}/>})}
         />
       </StackNavigator>

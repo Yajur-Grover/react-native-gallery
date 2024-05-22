@@ -15,6 +15,7 @@ import {ViewExamplePage} from './examples/ViewExamplePage';
 import {ImageExamplePage} from './examples/ImageExamplePage';
 import {ScrollViewExamplePage} from './examples/ScrollViewExample';
 import { VirtualizedListExamplePage } from './examples/VirtualizedListExamplePage';
+import { SvgExamplePage } from './examples/SvgExamplePage';
 
 interface IRNGalleryExample {
   key: string;
@@ -218,6 +219,12 @@ export const RNGalleryList: Array<IRNGalleryExample> = [
     key: 'Xaml',
     icon: '\uE70F',
     type: 'Layout',
+  },
+  {
+    key: 'SVG',
+    component: SvgExamplePage,
+    icon: '\uE734',
+    type: 'Media'
   },
 ];
 
