@@ -4,6 +4,7 @@ import type {ImageSourcePropType} from 'react-native';
 import {HomePage} from './HomePage';
 import {SettingsPage} from './SettingsPage';
 import {ComponentListPage} from './ComponentListPage';
+import {AccessibilityScreenReaderExamplePage} from './examples/Accessibility/AccessibilityScreenReaderPage';
 import {ButtonExamplePage} from './examples/ButtonExamplePage';
 import {CheckBoxExamplePage} from './examples/CheckBoxExamplePage';
 import {ClipboardExamplePage} from './examples/ClipboardExamplePage';
@@ -46,6 +47,7 @@ import {LottieAnimationsExamplePage} from './examples/LottieAnimationsExamplePag
 
 // https://github.com/microsoft/WinUI-Gallery/blob/c8f04135579c08c9a80711dcad7247f259891c79/WinUIGallery/DataModel/ControlInfoData.json#L803
 let RNGalleryCategories = [
+  {label: 'Accessibility', icon: '\uE776'},
   {label: 'Basic Input', icon: '\uE73A'},
   {label: 'Collections', icon: '\uE80A'},
   {label: 'Date & time', icon: '\uEC92'},
@@ -88,6 +90,14 @@ export const RNGalleryList: Array<IRNGalleryExample> = [
     component: ComponentListPage,
     textIcon: '\uE71D',
     type: '',
+  },
+  {
+    key: 'Screen Reader',
+    component: AccessibilityScreenReaderExamplePage,
+    textIcon: '\uE776',
+    imageIcon: require('../assets/ControlImages/Button.png'),
+    subtitle: 'A control that responds to user input and raises a Click event.',
+    type: 'Accessibility',
   },
   {
     key: 'Button',
